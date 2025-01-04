@@ -1,7 +1,8 @@
 /* |X| Set root variables */
 :root {
     --priCyan: hsl(179, 62%, 43%);
-    --secCyan: hsl(179, 62%, 55%);
+    --secCyan: hsl(179, 62%, 47%);
+    --tertCyan: hsl(179, 62%, 75%);
     --shadowCyan: hsl(179, 62%, 30%); 
     --priBrightYellow: hsl(71, 73%, 54%);
 
@@ -27,6 +28,13 @@ body {
     background-color: var(--neuLightGray);
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1.125rem;
+}
+
 /* || Generic stylings - join  */
 #join-section {
     background-color: white;
@@ -49,19 +57,55 @@ body {
     background-color: var(--priCyan);
 }
 
-#subscription-section h2 {}
-#subscription-section .subscription-pricing {}
-#subscription-section .subscription-pricing .sub-cost {}
-#subscription-section .subscription-pricing .sub-time {}
-#subscription-section .sub-info {}
-#subscription-section button {}
+#subscription-section h2 {
+    color: white;
+}
 
+#subscription-section .subscription-pricing {
+    display: flex;
+}
+
+#subscription-section .subscription-pricing .sub-cost {
+    color: white;
+    font-size: 1.625rem;
+}
+
+#subscription-section .subscription-pricing .sub-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--tertCyan);
+    margin-left: 0.5rem;
+}
+
+#subscription-section .sub-info {
+    color: var(--neuLightGray);
+    font-size: 1.125rem;
+}
+#subscription-section button {
+    background-color: var(--priBrightYellow);
+    border: none;
+    color: white;
+    box-shadow: 0rem 0.125rem 0.5rem var(--shadowCyan);
+    height: 2.5rem;
+    width: 95%;
+    margin: 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 1.125rem;
+}
+
+/* || Generic stylings - why */
 #why-section {
     background-color: var(--secCyan);
 }
 
+#why-section h2 {
+    color: white;
+}
+
 #why-section li {
     list-style-type: none;
+    color: var(--neuLightGray);
 }
 
 /* || Mobile-viewport stylings */
@@ -74,7 +118,6 @@ main {
 }
 section {
     width: 100%;
-    padding: 1rem;
     height: 200px;
 }
 
