@@ -88,15 +88,14 @@ li {
 
 /* || Mobile-viewport styles */
 body {
-    padding: 3rem 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 main {
-    height: 90svh;
-    width: 100svh;
+    height: 80dvh;
+    width: 100dvh;
     display: flex;
     flex-direction: column;
 }
