@@ -95,8 +95,8 @@ body {
 }
 
 main {
-    height: 100dvh;
-    width: 100dvw;
+    height: 90svh;
+    width: 100svh;
     display: flex;
     flex-direction: column;
 }
