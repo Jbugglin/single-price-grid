@@ -1,0 +1,185 @@
+/* |X| Set root variables */
+:root {
+    --priCyan: hsl(179, 62%, 43%);
+    --secCyan: hsl(179, 62%, 55%);
+    --shadowCyan: hsl(179, 62%, 30%); 
+    --priBrightYellow: hsl(71, 73%, 54%);
+
+    --neuLightGray: hsl(204, 43%, 93%);
+    --neuGrayishBlue: hsl(218, 22%, 67%);
+}
+
+/* |X| Basic CSS reset */
+*, 
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* || Set generic styles - non-viewport dependant */
+body {
+    width: 100dvw;
+    height: 100dvh;
+    background-color: var(--neuLightGray);
+    position: relative;
+}
+
+h2 {
+    color: white;
+}
+
+/* |X| Join section generic styling */
+#join-section {
+    background-color: white;
+}
+
+h1 {
+    color: var(--priCyan);
+}
+
+h3 {
+    color: var(--priBrightYellow);
+}
+
+.join-section-p {
+    color: var(--neuGrayishBlue);
+}
+
+
+/* |X| Subcription section generic styling */
+#subscription-section {
+    background-color: var(--priCyan);
+}
+
+.subscription-pricing {
+    display: flex;
+}
+
+.sub-cost {
+    color: white;
+}
+
+.sub-time {
+    color: var(--secCyan);
+}
+
+.sub-info {
+    color: var(--neuLightGray);
+}
+
+button {
+    background-color: var(--priBrightYellow);
+    color: white;
+    border: none;
+    box-shadow: 0rem 0.13rem 0.064rem hsl(179, 62%, 40%);
+}
+
+/* |X| Why section generic styling */
+#why-section {
+    background-color: var(--secCyan);
+}
+
+li {
+    list-style-type: none;
+    color: var(--neuLightGray);
+}
+
+/* || Mobile-viewport styles */
+body {
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    padding: 1.75rem;
+}
+
+/* || Join-section mobile-viewport */
+#join-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius:  0.375rem 0.375rem 0rem 0rem;
+}
+
+.join-section-p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* || Subscription-section mobile-viewport */
+#subscription-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sub-cost {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.sub-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    margin-left: 1rem;
+}
+
+.sub-info {
+    font-size: 1.125rem;
+}
+
+button {
+    height: 3rem;
+    border-radius: 0.25rem;
+    box-shadow: 0rem 0.125rem 0.625rem var(--shadowCyan);
+    font-size: 1.125rem;
+}
+
+/* || Why-section mobile-viewport */
+#why-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 0rem 0rem 0.375rem 0.375rem;
+}
+
+li {
+    margin: 0.25rem 0rem;
+}
+
+
+
+
+
+/* || Desktop-viewport styles */
+
+/* || Footer */
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.attribution {
+     font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
