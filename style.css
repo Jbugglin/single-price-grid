@@ -1,13 +1,15 @@
 /* |X| Set root variables */
 :root {
     --priCyan: hsl(179, 62%, 43%);
-    --secCyan: hsl(179, 62%, 47%);
+    --secCyan: hsla(179, 62%, 43%, 0.833);
     --tertCyan: hsl(179, 62%, 75%);
     --shadowCyan: hsl(179, 62%, 30%); 
     --priBrightYellow: hsl(71, 73%, 54%);
 
     --neuLightGray: hsl(204, 43%, 93%);
     --neuGrayishBlue: hsl(218, 22%, 67%);
+    --heavy-font: 700;
+    --light-font: 400;
 }
 
 /* |X| Basic CSS reset */
@@ -17,6 +19,34 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
+    font-family: "Karla", serif;
+    font-optical-sizing: auto;
+}
+
+h1, h2, h3, .sub-cost, button {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 1.25rem;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 0.8rem;
+    line-height: 1.25;
+}
+
+p, li, .sub-info, .sub-time {
+    font-weight: 400;
 }
 
 body {
@@ -32,13 +62,14 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 1.125rem;
+    padding: 1.25rem;
 }
 
 /* || Generic stylings - join  */
 /* MC needs a box-shadow */
 #join-section {
     background-color: white;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
 }
 
 #join-section h1 {
@@ -68,7 +99,7 @@ section {
 
 #subscription-section .subscription-pricing .sub-cost {
     color: white;
-    font-size: 1.625rem;
+    font-size: 1.5rem;
 }
 
 #subscription-section .subscription-pricing .sub-time {
@@ -81,23 +112,26 @@ section {
 
 #subscription-section .sub-info {
     color: var(--neuLightGray);
-    font-size: 1.125rem;
+    font-size: 1rem;
 }
+
 #subscription-section button {
     background-color: var(--priBrightYellow);
     border: none;
     color: white;
     box-shadow: 0rem 0.125rem 0.5rem var(--shadowCyan);
-    height: 2.5rem;
+    height: 2.625rem;
     width: 95%;
     margin: 0.5rem;
     border-radius: 0.25rem;
-    font-size: 1.125rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
 }
 
 /* || Generic stylings - why */
 #why-section {
     background-color: var(--secCyan);
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
 }
 
 #why-section h2 {
@@ -107,12 +141,14 @@ section {
 #why-section li {
     list-style-type: none;
     color: var(--neuLightGray);
+    margin: 0.25rem 0rem;
+    font-size: 0.8rem;
 }
 
 /* || Mobile-viewport stylings */
 main {
     width: 80%;
-    height: fit-content;
+    height: max-content;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
