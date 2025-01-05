@@ -36,6 +36,7 @@ section {
 }
 
 /* || Generic stylings - join  */
+/* MC needs a box-shadow */
 #join-section {
     background-color: white;
 }
