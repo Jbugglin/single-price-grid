@@ -1,4 +1,4 @@
-/* |X| Set root variables */
+/* || Set root variables */
 :root {
     --priCyan: hsl(179, 62%, 43%);
     --secCyan: hsla(179, 62%, 43%, 0.833);
@@ -13,7 +13,7 @@
     --light-font: 400;
 }
 
-/* |X| Basic CSS reset */
+/* || Basic CSS reset */
 *, 
 *::after,
 *::before {
@@ -67,7 +67,6 @@ section {
 }
 
 /* || Generic stylings - join  */
-/* MC needs a box-shadow */
 main {
     box-shadow: 0rem 1rem 0.75rem var(--mcBoxShadow);
     border-radius: 0.5rem;
@@ -167,32 +166,13 @@ section {
 #join-section {
     width: 100%;
 }
-#join-section h1 {}
+
 #join-section h3 {
     line-height: 1.5;
 }
 #join-section .join-section-p {
     line-height: 1.625;
 }
-
-/* || Subscription section styling */
-#subscription-section {}
-
-
-
-#subscription-section .subscription-pricing .sub-time {}
-#subscription-section .sub-info {}
-
-
-/* || Why section styling */
-#why-section {}
-#why-section h2 {}
-#why-section ul {}
-#why-section li{}
-
-
-
-
 
 /* || Desktop-viewport stylings */
 @media screen and (min-width: 500px) {
